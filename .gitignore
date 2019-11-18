@@ -350,3 +350,4 @@ MigrationBackup/
 App_Start/IdentityConfig.cs
 Views/Web.config
 Web.config
+Migrations/Configuration.cs
