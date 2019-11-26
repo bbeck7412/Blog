@@ -351,3 +351,4 @@ App_Start/IdentityConfig.cs
 Views/Web.config
 Web.config
 Migrations/Configuration.cs
+Migrations/Configuration.cs
