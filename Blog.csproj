@@ -209,6 +209,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\favicon.png" />
     <Content Include="Images\Landing.jpg" />
     <Content Include="Images\last-of-the-breed-the-final-true-pontiac-trans-am-1998-02-0021.jpg" />
     <Content Include="Images\mask-anonymous.jpg" />
