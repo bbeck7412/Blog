@@ -181,6 +181,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EmailHelper.cs" />
     <Compile Include="Helpers\ImageUpdateValidator.cs" />
     <Compile Include="Helpers\StringUtilities.cs" />
     <Compile Include="ImageUploadValidator.cs" />

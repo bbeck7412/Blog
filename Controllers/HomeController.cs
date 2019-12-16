@@ -35,13 +35,13 @@ namespace Blog.Controllers
             {
                 try
                 {
-                    var body = "<p>Email From: <bold>{0}</bold> ({1})</p> <p>Message:</p><p>{2}</p>";
-                    var from = "MyBlog<example@email.com>";
-                    model.ComBody = "This is a message from your blog.";
+                    var body = model.ComBody;
+                    var from = model.FromEmail;
+                    var subject = model.Subject;
                     var email = new MailMessage(from, ConfigurationManager.AppSettings["emailto"])
 
                 {
-                    Subject = "MyBlog",
+                    Subject = "My Blog Email",
                     Body = string.Format(body, model.FromName, model.FromEmail,model.ComBody),
                     IsBodyHtml = true
                 };
