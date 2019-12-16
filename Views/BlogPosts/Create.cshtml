@@ -1,20 +1,28 @@
 ﻿@model Blog.Models.BlogPost
 
-
-
-<div class="container">
     @{
         Layout = "~/Views/Shared/_LoginLayout.cshtml";
     }
-</div>
 
+    <header class="masthead" style="background-image: url('/Images/Landing.jpg')">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <div class="site-heading">
+                        <h2> New Post </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 @using (Html.BeginForm("Create", "BlogPosts", FormMethod.Post, new { enctype = "Multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>BlogPost</h4>
+        <h4> Create New Post </h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 

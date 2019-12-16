@@ -68,7 +68,7 @@
                     @if (User.IsInRole("Admin") || User.IsInRole("Moderator") || User.IsInRole("Authenticated User"))
                     {
                         <li class="nav-item">
-                            @Html.ActionLink("Log out", "LogOff", "Home")
+                            @Html.ActionLink("Log off","CustomLogOff","Account")
                         </li>
                     }
 
@@ -144,7 +144,7 @@
         });
     </script>
 
-    
+
 
 
 
